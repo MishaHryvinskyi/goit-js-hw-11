@@ -1,7 +1,9 @@
 import './css/styles.css';
-
+import Notiflix from 'notiflix';
 const DEBOUNCE_DELAY = 300;
 import { getPhotos } from './js/ApiService';
+
+
 const refs = {
     form: document.querySelector(".search-form"),
     input: document.querySelector("input"),
@@ -11,6 +13,6 @@ const refs = {
 
 
 refs.btnSearch.addEventListener('click', () => {
-    console.log("Ти клікнув на кнопку");
+    console.log('log');
 });
 // refs.form.addEventListener('submit', onSubmit);
